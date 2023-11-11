@@ -19,3 +19,26 @@ Entity–attribute–value model (EAV) is a data model to encode, in a space-eff
 ## Limitation of EAV
 
 * In EAV model the entity data is more fragmented and so selecting an entire entity record requires multiple table joins. [Please Check this ](https://sunel.github.io/eav/master/ideology/flat-table.html)
+
+### Laravel 10
+
+```
+"require": {
+    ...
+    "sunel/json-api-resources":"master@dev",
+    "sunel/eav": "master@dev"
+}
+```
+
+```
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/DarkPreacher/eav"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/DarkPreacher/json-api-resources"
+        }
+    ],
+```
